@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    margin: 90px auto;
+    height: 450px;
+    width: 85%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: block;
+}
+
+.slide {
+    animation: scrolling 13s linear infinite;
+}
+
+@keyframes scrolling {
+    0%    { transform: translateX(0); }
+    50%  { transform: translateX(-2580px); }
+    100%    { transform: translateX(0);}
+}
+
+.slide:hover {
+    animation-play-state: paused;
+}
+
+.img {
+    display: inline-block;
+}
+
+.img img {
+    height: 450px;
+}
+
